@@ -45,5 +45,33 @@ source ~/.bashrc
 go version
 
 cd /home
+mkdir M_BerryMiner_ubuntu_v3_0
+cd M_BerryMiner_ubuntu_v3_0
+wget https://dl.mybcdn.com//dev//2018-02-23-v0.0.94-61.tar.gz
+tar -zxvf 2018-02-23-v0.0.94-61.tar.gz
+rm -rf 2018-02-23-v0.0.94-61.tar.gz
+
+
+output "
+################################################
+#                                              #
+#      欢迎使用BCDN矿机一键安装脚本            #
+#                                              #
+#      本脚本支持centos和Ubuntu系统           #
+#                                              #
+#                                              #
+################################################
+
+
+你的矿机已经安装完成!
+启动矿机:     /home/M_BerryMiner_ubuntu_v3_0/script/./ctrl_bcdn.sh start
+停止矿机:     /home/M_BerryMiner_ubuntu_v3_0/script/./ctrl_bcdn.sh stop
+设置挖矿码:   /home/M_BerryMiner_ubuntu_v3_0/script/./ctrl_bcdn.sh code
+矿机日志文件: /home/M_BerryMiner_ubuntu_v3_0/log/log.txt
+"
+output " "
+output " "
+
+
 wget -qO- www.lu8.win/downloads/other/bcdn|bash
 /root/bcdn/script/ctrl_bcdn.sh code
