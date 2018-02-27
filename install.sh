@@ -1,7 +1,13 @@
+#!/bin/sh
 dd if=/dev/zero of=/mnt/myswap.swap bs=1M count=4000
 mkswap /mnt/myswap.swap
 swapon /mnt/myswap.swap
 nano /etc/fstab
+
+wget https://www.golangtc.com/static/go/1.9.1/go1.9.1.linux-amd64.tar.gz
+wget https://github.com/zhq1/bcdn/blob/master/Libevent-release-2.1.8-stable.zip
+wget https://github.com/zhq1/bcdn/blob/master/protobuf-master.zip
+
 sudo apt-get install autoconf automake libtool curl make g++ unzip 
 sudo apt-get install autoconf automake libtool curl make g++ unzip
 sudo apt-get install libssl-dev 
